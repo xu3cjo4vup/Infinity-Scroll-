@@ -12,13 +12,12 @@ body {
 }
 
 h1  {
-  font-size:2.5rem;
+  font-size:3rem;
   font-weight: bold;
   text-align: center;
   margin-top:10px;
-  margin-left: 10px;
   letter-spacing: 5px;
-  /*text-align: center;*/
+  /*border-bottom : solid;*/
 }
 
 .loader {
@@ -38,15 +37,50 @@ h1  {
   background-color: whitesmoke;
 }
 
+.topbtn {
+  border-radius: 50%;
+  background-color: #0a3a83;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  width: 50px;
+  height:50px;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  
+}
+
+.topbtn:hover {
+  background-color: #3e84ec;
+  cursor: pointer;
+}
+
+
 .image-container {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  justify-content: center;    
+  justify-content: center;  */
+  margin: 10px 30%;  
 }
 
 .image-container img {
-  width: 40%;
-  margin-bottom: 20px; 
-  margin-left: 30%;
+  width: 100%;
+  margin-top : 5px; 
+ 
   border-radius: 10px; 
 }
+
+/* Media Query for phones */
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}
+  
